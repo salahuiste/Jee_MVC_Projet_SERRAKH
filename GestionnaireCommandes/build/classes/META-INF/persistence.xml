@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+ <persistence-unit name="boutique">
+ <jta-data-source>java:/boutique</jta-data-source>
+ <class>Entity.Categorie</class>
+ <class>Entity.Client</class>
+ <class>Entity.Produit</class>
+ <class>Entity.CommandeClient</class>
+ <class>Entity.ProduitCommande</class>
+ <properties>
+ <property value="org.hibernate.dialect.MySQLDialect" name="hibernate.dialect"/>
+ <property value="update" name="hibernate.hbm2ddl.auto"/>
+ <property value="true" name="hibernate.show_sql"/>
+ </properties>
+ </persistence-unit>
+</persistence>
